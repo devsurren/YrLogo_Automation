@@ -22,7 +22,7 @@ public class SignUpEmailPage extends Base {
 	WebElement creatAccountSubmitBtnElement;
 	
 	public CreateAccountForm sendEmailForCreateAccount() {
-		creatAccountElement.sendKeys("heyjusttest@gmail.com");
+		creatAccountElement.sendKeys("coolerthanme@gmail.com");
 		creatAccountSubmitBtnElement.click();
 		return new CreateAccountForm();
 	}

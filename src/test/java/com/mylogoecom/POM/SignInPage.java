@@ -9,7 +9,7 @@ import com.mylogoecom.base.Base;
 public class SignInPage extends Base {
 	
 	public SignInPage() {
-		PageFactory.initElements(driver, SignInPage.class);
+		PageFactory.initElements(driver, this);
 	}
 
 	@FindBy(id ="email")
@@ -21,15 +21,12 @@ public class SignInPage extends Base {
 	@FindBy(id="SubmitLogin")
 	public WebElement submitBtnElement;
 	
-	public void isInstanceCreated() {
-		System.out.println("Instance created");
-	}
 	
 	public void signinUser() {
-//		userNamElement.sendKeys(properties.getProperty("USER_NAME"));
-//		passwordElement.sendKeys(properties.getProperty("PASSWORD"));
-//		submitBtnElement.click();
-		userNamElement.sendKeys("surren");
+		userNamElement.sendKeys(properties.getProperty("USER_NAME"));
+		passwordElement.sendKeys(properties.getProperty("PASSWORD"));
+		submitBtnElement.click();
+		
 	}
 	
 	
