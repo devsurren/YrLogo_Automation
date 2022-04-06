@@ -2,28 +2,32 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-18T13:19:17 IST" name="Default suite" finished-at="2022-03-18T13:20:08 IST" duration-ms="51161">
+  <suite started-at="2022-04-06T20:46:21 IST" name="Default suite" finished-at="2022-04-06T20:47:03 IST" duration-ms="41271">
     <groups>
     </groups>
-    <test started-at="2022-03-18T13:19:17 IST" name="Default test" finished-at="2022-03-18T13:20:08 IST" duration-ms="51161">
-      <class name="com.mylogoecom.testclasses.SignUpEmailPageTest">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.mylogoecom.testclasses.SignUpEmailPageTest@6574a52c]" started-at="2022-03-18T13:19:17 IST" name="beforeSuite" finished-at="2022-03-18T13:19:17 IST" duration-ms="15" status="PASS">
+    <test started-at="2022-04-06T20:46:21 IST" name="Default test" finished-at="2022-04-06T20:47:03 IST" duration-ms="41271">
+      <class name="com.mylogoecom.testclasses.SignInPageTest">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.mylogoecom.testclasses.SignInPageTest@2892d68]" started-at="2022-04-06T20:46:20 IST" name="beforeSuite" finished-at="2022-04-06T20:46:21 IST" duration-ms="868" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.mylogoecom.testclasses.SignUpEmailPageTest@6574a52c]" started-at="2022-03-18T13:19:17 IST" name="launchBrowser" finished-at="2022-03-18T13:19:26 IST" duration-ms="9319" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.mylogoecom.testclasses.SignInPageTest@2892d68]" started-at="2022-04-06T20:46:21 IST" name="launchBrowser" finished-at="2022-04-06T20:46:44 IST" duration-ms="22995" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="createAccount()[pri:0, instance:com.mylogoecom.testclasses.SignUpEmailPageTest@6574a52c]" started-at="2022-03-18T13:19:26 IST" name="createAccount" finished-at="2022-03-18T13:20:08 IST" duration-ms="41748" status="PASS">
+        <test-method signature="goToSignInPage()[pri:0, instance:com.mylogoecom.testclasses.SignInPageTest@2892d68]" started-at="2022-04-06T20:46:44 IST" name="goToSignInPage" finished-at="2022-04-06T20:47:01 IST" duration-ms="16829" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createAccount -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mylogoecom.testclasses.SignUpEmailPageTest@6574a52c]" started-at="2022-03-18T13:20:08 IST" name="tearDown" finished-at="2022-03-18T13:20:08 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- goToSignInPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mylogoecom.testclasses.SignInPageTest@2892d68]" started-at="2022-04-06T20:47:01 IST" name="tearDown" finished-at="2022-04-06T20:47:01 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.mylogoecom.testclasses.SignUpEmailPageTest -->
+        <test-method is-config="true" signature="writeToExtentReport()[pri:0, instance:com.mylogoecom.testclasses.SignInPageTest@2892d68]" started-at="2022-04-06T20:47:01 IST" name="writeToExtentReport" finished-at="2022-04-06T20:47:03 IST" duration-ms="1295" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- writeToExtentReport -->
+      </class> <!-- com.mylogoecom.testclasses.SignInPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

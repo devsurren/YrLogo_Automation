@@ -8,19 +8,33 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.BeforeSuite;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Base {
 
 	protected static WebDriver driver;
 	
+	//Extent Reports Properties
+	ExtentSparkReporter htmlTemplatExtentSparkReporter;
+	protected static ExtentReports extentReports;
+	
 	public Properties properties = new Properties();
 	
 @BeforeSuite
 public void beforeSuite() {
 	try {
+		//loading properties files
 		properties.load(getClass().getResourceAsStream("/config.properties"));
 		System.out.println("GetProperties Password"+" "+properties.getProperty("PASSWORD"));
+		
+		//extent reports configuration
+		htmlTemplatExtentSparkReporter = new ExtentSparkReporter("ExtentReport.html");
+		extentReports =  new ExtentReports();
+		extentReports.attachReporter(htmlTemplatExtentSparkReporter);
+		
 	} catch (Exception e) {
 		System.out.println("error from beforesuitmethod"+" "+e.getMessage());
 	}

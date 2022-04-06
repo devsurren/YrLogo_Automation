@@ -21,12 +21,13 @@ public class SignInPage extends Base {
 	@FindBy(id="SubmitLogin")
 	public WebElement submitBtnElement;
 	
-	
-	public void signinUser() {
-		userNamElement.sendKeys(properties.getProperty("USER_NAME"));
-		passwordElement.sendKeys(properties.getProperty("PASSWORD"));
-		submitBtnElement.click();
 		
+	public void signinUser() {
+//		userNamElement.sendKeys(properties.getProperty("USER_NAME"));
+//		passwordElement.sendKeys(properties.getProperty("PASSWORD"));
+		userNamElement.sendKeys("nobody00@gmail.com");
+		passwordElement.sendKeys("123456789");
+		submitBtnElement.click();
 	}
 	
 	

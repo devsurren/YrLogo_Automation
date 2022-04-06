@@ -1,15 +1,9 @@
 package com.mylogoecom.POM;
 
-import java.lang.reflect.InvocationTargetException;
-import java.time.Duration;
-import java.util.function.Function;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.FluentWait;
-import org.openqa.selenium.support.ui.Wait;
 
 import com.mylogoecom.base.Base;
 
@@ -23,6 +17,9 @@ public class HomePage extends Base {
 		PageFactory.initElements(driver, this);
 	}
 
+	@FindBy(id = "search_query_top")
+	public WebElement searchBoxWebElement;
+	
 	@FindBy(xpath = "//img[contains(@class,'logo')]")
 	public WebElement logoElement;
 	
@@ -53,6 +50,15 @@ public SignUpEmailPage goToSignUpEmailPage() {
 	
 	return new SignUpEmailPage();
 	
+}
+
+public SearchPage queryToSearchProduct() {
+	try {
+		searchBoxWebElement.sendKeys("blouse \n");
+	} catch (Exception e) {
+		System.out.println("error in query to search product");
+	}
+	return new SearchPage();
 }
 	
 }

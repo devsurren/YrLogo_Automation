@@ -81,9 +81,6 @@ public class CreateAccountForm extends Base{
 	@FindBy(id = "submitAccount")
 	public WebElement submitButtonWebElement;
 	
-	
-	
-	
 	public void fillCreateAccountForm() {
 		genderTitleWebElement.click();
 		firstNameWebElement.sendKeys("peaky");
