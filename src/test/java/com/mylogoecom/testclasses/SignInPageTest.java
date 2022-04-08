@@ -1,26 +1,26 @@
 package com.mylogoecom.testclasses;
 
+import org.junit.BeforeClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
+//import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.mylogoecom.POM.HomePage;
+import com.mylogoecom.POM.SignInPage;
 import com.mylogoecom.base.Base;
-
 
 public class SignInPageTest extends Base {
 
 	HomePage homePageInstance;
+	SignInPage signInPageInstance;
 	
 	ExtentTest signInTestCaseExtentReport;
 	
 	 
-	
-	@BeforeMethod
+	@BeforeClass
 	public void launchBrowser() {
 		fireBrowser();
 	}
@@ -29,7 +29,6 @@ public class SignInPageTest extends Base {
 	public void tearDown() {
 		//driver.quit();
 	}
-	
 	
 	
 	@AfterTest
@@ -44,7 +43,7 @@ public class SignInPageTest extends Base {
 
 		homePageInstance=new HomePage();
 		try {
-		homePageInstance.goToSignInPage();
+		signInPageInstance=homePageInstance.goToSignInPage();
 		signInTestCaseExtentReport.log(Status.PASS,"Go to SignIn Page Successfull");
 		
 		} catch (Exception e) {
@@ -53,5 +52,20 @@ public class SignInPageTest extends Base {
 		}
 		
 	}
+	
+	@Test
+	public void loginUser() {
+		ExtentTest loginUserTestCase = extentReports.createTest("Login The User");
+		try {
+			signInPageInstance.signinUser();
+			loginUserTestCase.log(Status.PASS, "User was logged in Successfully");
+		} catch (Exception e) {
+			loginUserTestCase.log(Status.FAIL, "Login user failed");
+			System.out.println("error from SignInPageTest in loginUser"+e.getMessage());
+		}
+		
+	}
+	
+	
 	
 }
