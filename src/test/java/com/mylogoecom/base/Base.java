@@ -34,7 +34,7 @@ public void beforeSuite() {
 		htmlTemplatExtentSparkReporter = new ExtentSparkReporter("ExtentReport.html");
 		extentReports =  new ExtentReports();
 		extentReports.attachReporter(htmlTemplatExtentSparkReporter);
-		
+		fireBrowser();		
 	} catch (Exception e) {
 		System.out.println("error from beforesuitmethod"+" "+e.getMessage());
 	}

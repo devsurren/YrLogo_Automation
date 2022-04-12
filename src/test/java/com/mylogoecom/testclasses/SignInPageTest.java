@@ -1,6 +1,5 @@
 package com.mylogoecom.testclasses;
 
-import org.junit.BeforeClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 //import org.testng.annotations.BeforeMethod;
@@ -20,10 +19,10 @@ public class SignInPageTest extends Base {
 	ExtentTest signInTestCaseExtentReport;
 	
 	 
-	@BeforeClass
-	public void launchBrowser() {
-		fireBrowser();
-	}
+//	@BeforeClass
+//	public void launchBrowser() {
+//		fireBrowser();
+//	}
 	
 	@AfterMethod
 	public void tearDown() {
@@ -64,8 +63,6 @@ public class SignInPageTest extends Base {
 			System.out.println("error from SignInPageTest in loginUser"+e.getMessage());
 		}
 		
-	}
-	
-	
+	}	
 	
 }

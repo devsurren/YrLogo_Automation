@@ -1,37 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-04-08T12:51:35 IST" name="Default suite" finished-at="2022-04-08T12:51:36 IST" duration-ms="1161">
+  <suite started-at="2022-04-12T21:49:45 IST" name="Default suite" finished-at="2022-04-12T21:50:10 IST" duration-ms="24723">
     <groups>
     </groups>
-    <test started-at="2022-04-08T12:51:35 IST" name="Default test" finished-at="2022-04-08T12:51:36 IST" duration-ms="1161">
-      <class name="com.mylogoecom.testclasses.SignInPageTest">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.mylogoecom.testclasses.SignInPageTest@3feb2dda]" started-at="2022-04-08T12:51:34 IST" name="beforeSuite" finished-at="2022-04-08T12:51:35 IST" duration-ms="793" status="PASS">
+    <test started-at="2022-04-12T21:49:45 IST" name="Default test" finished-at="2022-04-12T21:50:10 IST" duration-ms="24723">
+      <class name="com.mylogoecom.testclasses.OrderProductTest">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.mylogoecom.testclasses.OrderProductTest@1a6d8329]" started-at="2022-04-12T21:49:25 IST" name="beforeSuite" finished-at="2022-04-12T21:49:45 IST" duration-ms="19360" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method signature="goToSignInPage()[pri:0, instance:com.mylogoecom.testclasses.SignInPageTest@3feb2dda]" started-at="2022-04-08T12:51:35 IST" name="goToSignInPage" finished-at="2022-04-08T12:51:35 IST" duration-ms="139" status="PASS">
+        <test-method signature="addProductTpShoppingCart()[pri:0, instance:com.mylogoecom.testclasses.OrderProductTest@1a6d8329]" started-at="2022-04-12T21:49:45 IST" name="addProductTpShoppingCart" finished-at="2022-04-12T21:50:03 IST" duration-ms="17622" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- goToSignInPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mylogoecom.testclasses.SignInPageTest@3feb2dda]" started-at="2022-04-08T12:51:35 IST" name="tearDown" finished-at="2022-04-08T12:51:35 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- addProductTpShoppingCart -->
+        <test-method signature="addressPageOfShoppingCartTest()[pri:0, instance:com.mylogoecom.testclasses.OrderProductTest@1a6d8329]" started-at="2022-04-12T21:50:03 IST" name="addressPageOfShoppingCartTest" finished-at="2022-04-12T21:50:05 IST" duration-ms="2697" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="loginUser()[pri:0, instance:com.mylogoecom.testclasses.SignInPageTest@3feb2dda]" started-at="2022-04-08T12:51:35 IST" name="loginUser" finished-at="2022-04-08T12:51:35 IST" duration-ms="5" status="PASS">
+        </test-method> <!-- addressPageOfShoppingCartTest -->
+        <test-method signature="orderConfirmationPageTest()[pri:0, instance:com.mylogoecom.testclasses.OrderProductTest@1a6d8329]" started-at="2022-04-12T21:50:05 IST" name="orderConfirmationPageTest" finished-at="2022-04-12T21:50:05 IST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginUser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mylogoecom.testclasses.SignInPageTest@3feb2dda]" started-at="2022-04-08T12:51:35 IST" name="tearDown" finished-at="2022-04-08T12:51:35 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- orderConfirmationPageTest -->
+        <test-method signature="orderSuccessFullPageTest()[pri:0, instance:com.mylogoecom.testclasses.OrderProductTest@1a6d8329]" started-at="2022-04-12T21:50:05 IST" name="orderSuccessFullPageTest" finished-at="2022-04-12T21:50:05 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="writeToExtentReport()[pri:0, instance:com.mylogoecom.testclasses.SignInPageTest@3feb2dda]" started-at="2022-04-08T12:51:35 IST" name="writeToExtentReport" finished-at="2022-04-08T12:51:36 IST" duration-ms="897" status="PASS">
+        </test-method> <!-- orderSuccessFullPageTest -->
+        <test-method signature="paymentPageofShoppingCartPage()[pri:0, instance:com.mylogoecom.testclasses.OrderProductTest@1a6d8329]" started-at="2022-04-12T21:50:05 IST" name="paymentPageofShoppingCartPage" finished-at="2022-04-12T21:50:05 IST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- writeToExtentReport -->
-      </class> <!-- com.mylogoecom.testclasses.SignInPageTest -->
+        </test-method> <!-- paymentPageofShoppingCartPage -->
+        <test-method signature="shippingPageOfShoppingCartTest()[pri:0, instance:com.mylogoecom.testclasses.OrderProductTest@1a6d8329]" started-at="2022-04-12T21:50:05 IST" name="shippingPageOfShoppingCartTest" finished-at="2022-04-12T21:50:08 IST" duration-ms="2952" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shippingPageOfShoppingCartTest -->
+        <test-method is-config="true" signature="writeResultToExtentReport()[pri:0, instance:com.mylogoecom.testclasses.OrderProductTest@1a6d8329]" started-at="2022-04-12T21:50:08 IST" name="writeResultToExtentReport" finished-at="2022-04-12T21:50:10 IST" duration-ms="1263" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- writeResultToExtentReport -->
+      </class> <!-- com.mylogoecom.testclasses.OrderProductTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
