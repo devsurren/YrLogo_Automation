@@ -1,13 +1,13 @@
 package com.mylogoecom.POM;
 
-import java.time.Duration;
+//import java.time.Duration;
 
-import org.openqa.selenium.JavascriptExecutor;
+//import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.Select;
+//import org.openqa.selenium.support.ui.Select;
 
 import com.mylogoecom.base.Base;
 
@@ -32,6 +32,7 @@ public class ShippingPageInShoppingCart extends Base {
 			//using Actions Class
 			
 			Actions _Actions = new Actions(driver);
+			//Move to the check_box element then click build perform using action class
 			_Actions.moveToElement(agreeTermsAndConditionWebElement).click().build().perform();
 			
 			shippingProceedToCheckOutWebElement.click();
