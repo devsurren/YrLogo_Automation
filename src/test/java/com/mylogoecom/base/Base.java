@@ -21,14 +21,13 @@ public class Base {
 	ExtentSparkReporter htmlTemplatExtentSparkReporter;
 	protected static ExtentReports extentReports;
 	
-	public Properties properties = new Properties();
+	protected Properties properties = new Properties();
 	
 @BeforeSuite
 public void beforeSuite() {
 	try {
 		//loading properties files
 		properties.load(getClass().getResourceAsStream("/config.properties"));
-		System.out.println("GetProperties Password"+" "+properties.getProperty("PASSWORD"));
 		
 		//extent reports configuration
 		htmlTemplatExtentSparkReporter = new ExtentSparkReporter("ExtentReport.html");

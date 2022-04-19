@@ -13,6 +13,7 @@ public class HomePage extends Base {
 	
 	SignInPage insInPage;
 	
+	
 	public HomePage() {
 		PageFactory.initElements(driver, this);
 	}
@@ -26,9 +27,7 @@ public class HomePage extends Base {
 	@FindBy(linkText = "Sign in")
 	public WebElement signInLinkElement;
 	
-//	Wait<WebDriver> driverWait = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(20)).pollingEvery(Duration.ofSeconds(4))
-//			.ignoring(InvocationTargetException.class);
-//	
+
 	public SignInPage goToSignInPage() {
 		try {
 			signInLinkElement.click();
@@ -54,7 +53,7 @@ public SignUpEmailPage goToSignUpEmailPage() {
 
 public SearchPage queryToSearchProduct() {
 	try {
-		searchBoxWebElement.sendKeys("blouse \n");
+		searchBoxWebElement.sendKeys(properties.getProperty("SEARCH_KEY"));
 	} catch (Exception e) {
 		System.out.println("error in query to search product");
 	}
